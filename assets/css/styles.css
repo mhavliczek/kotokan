@@ -7,16 +7,16 @@
    ====================================== */
 :root {
     /* Colores principales */
-    --color-primary: #1a365d;     /* Azul marino - confianza, tradición */
-    --color-secondary: #c53030;   /* Rojo - pasión, judo (color del judogi) */
-    --color-accent: #f6e05e;      /* Amarillo - energía, medallas */
+    --color-primary: #3b1f0f;     /* Café oscuro - identidad fuerte del logo */
+    --color-secondary: #8b1d1d;   /* Rojo intenso - fuerza y tradición */
+    --color-accent: #d4a03a;      /* Dorado - elegancia y distinción */
     
     /* Colores neutros */
-    --color-white: #ffffff;
-    --color-light-gray: #f7fafc;
-    --color-gray: #a0aec0;
-    --color-dark-gray: #4a5568;
-    --color-black: #1a202c;
+    --color-white: #fffaf4;
+    --color-light-gray: #f6efe5;
+    --color-gray: #8c6c4a;
+    --color-dark-gray: #4a2f1f;
+    --color-black: #111111;
     
     /* Tipografía */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -67,7 +67,7 @@ body {
     font-family: var(--font-primary);
     line-height: 1.6;
     color: var(--color-dark-gray);
-    background-color: var(--color-white);
+    background: linear-gradient(180deg, #fdf8ef 0%, #f4ebdc 100%);
     overflow-x: hidden;
 }
 
@@ -176,8 +176,8 @@ button {
 }
 
 .btn-primary:hover {
-    background-color: #9b2c2c;
-    border-color: #9b2c2c;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
@@ -355,7 +355,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(26, 54, 93, 0.9) 0%, rgba(26, 54, 93, 0.7) 100%);
+    background: linear-gradient(135deg, rgba(17, 17, 17, 0.95) 0%, rgba(59, 31, 15, 0.85) 100%);
     z-index: 1;
 }
 
@@ -464,7 +464,7 @@ button {
 .feature-icon {
     width: 60px;
     height: 60px;
-    background-color: rgba(197, 48, 48, 0.1);
+    background-color: rgba(139, 29, 29, 0.12);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -589,7 +589,7 @@ button {
 .contact-icon {
     width: 50px;
     height: 50px;
-    background-color: rgba(26, 54, 93, 0.1);
+    background-color: rgba(59, 31, 15, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -956,7 +956,7 @@ body {
 .nav-menu a:hover,
 .nav-menu a.active {
     color: var(--color-primary);
-    background: rgba(26, 54, 93, 0.08);
+    background: rgba(59, 31, 15, 0.08);
 }
 
 .hamburger {
@@ -990,7 +990,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(110deg, rgba(15, 23, 42, 0.92) 0%, rgba(26, 54, 93, 0.75) 100%);
+    background: linear-gradient(110deg, rgba(17, 17, 17, 0.94) 0%, rgba(59, 31, 15, 0.82) 100%);
 }
 
 .hero-content {
@@ -1080,7 +1080,7 @@ main section h2::after {
 
 .about,
 .contact {
-    background: linear-gradient(180deg, #f8faff 0%, #f5f7fb 100%);
+    background: linear-gradient(180deg, #fdf7eb 0%, #f5ebdc 100%);
 }
 
 .about-content,
@@ -1119,7 +1119,7 @@ main section h2::after {
 .benefits li {
     padding: 0.65rem 0.8rem;
     border-radius: 12px;
-    background: rgba(26, 54, 93, 0.05);
+    background: rgba(59, 31, 15, 0.05);
 }
 
 .about-stats {
@@ -1130,7 +1130,7 @@ main section h2::after {
 .stat {
     padding: 1.2rem 1.3rem;
     border-radius: 20px;
-    background: linear-gradient(135deg, rgba(26, 54, 93, 0.95), rgba(30, 58, 138, 0.9));
+    background: linear-gradient(135deg, rgba(59, 31, 15, 0.95), rgba(139, 29, 29, 0.9));
     color: var(--color-white);
 }
 
@@ -1175,7 +1175,7 @@ main section h2::after {
     display: grid;
     place-items: center;
     border-radius: 14px;
-    background: rgba(26, 54, 93, 0.08);
+    background: rgba(59, 31, 15, 0.08);
     font-size: 1.3rem;
     margin-bottom: 0.9rem;
 }
@@ -1195,7 +1195,7 @@ main section h2::after {
 .value-item {
     padding: 0.8rem 1rem;
     border-radius: 999px;
-    background: linear-gradient(135deg, rgba(197, 48, 48, 0.12), rgba(246, 224, 94, 0.2));
+    background: linear-gradient(135deg, rgba(139, 29, 29, 0.12), rgba(212, 160, 58, 0.24));
     color: var(--color-primary);
     font-weight: 700;
 }
@@ -1212,7 +1212,7 @@ main section h2::after {
     gap: 0.75rem;
     padding: 0.8rem 0.95rem;
     border-radius: 14px;
-    background: rgba(26, 54, 93, 0.05);
+    background: rgba(59, 31, 15, 0.05);
 }
 
 .contact-form {
@@ -1236,7 +1236,7 @@ main section h2::after {
 .contact-form select:focus {
     outline: none;
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.14);
+    box-shadow: 0 0 0 3px rgba(59, 31, 15, 0.14);
 }
 
 .contact-form button {
@@ -1245,8 +1245,8 @@ main section h2::after {
 }
 
 .footer {
-    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
-    color: #e2e8f0;
+    background: linear-gradient(135deg, #111111 0%, #3b1f0f 100%);
+    color: #f3e8d6;
     padding: 3.5rem 0 2rem;
 }
 
@@ -1283,7 +1283,7 @@ main section h2::after {
 
 .footer-links a,
 .social-media a {
-    color: #dbeafe;
+    color: #f6e8cf;
 }
 
 .footer-links a:hover,
@@ -1294,8 +1294,8 @@ main section h2::after {
 .copyright {
     text-align: center;
     padding-top: 1.2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.14);
-    color: #cbd5e1;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    color: #d8c9a8;
 }
 
 @media (max-width: 900px) {
